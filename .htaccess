@@ -1,0 +1,32 @@
+Options -Indexes
+
+RewriteEngine on
+
+# ErrorDocument 404 /error.php
+
+# Site
+RewriteRule ^$ app/controller/siteController.php?action=home_unreg [QSA,L]
+RewriteRule ^loggedin/?$ app/controller/siteController.php?action=home [QSA,L]
+RewriteRule ^logout/?$ app/controller/siteController.php?action=logout [QSA,L]
+RewriteRule ^login/?$ app/controller/siteController.php?action=login [QSA,L]
+RewriteRule ^login/process/?$ app/controller/siteController.php?action=loginProcess [QSA,L]
+RewriteRule ^myfamily/?$ app/controller/siteController.php?action=myfamily [QSA,L]
+
+# Member
+
+RewriteRule ^member/view/(\d+)/?$ app/controller/memberController.php?action=view&member_id=$1 [QSA,L]
+RewriteRule ^member/add/?$ app/controller/memberController.php?action=add [QSA,L]
+RewriteRule ^member/add/member/?$ app/controller/memberController.php?action=addMember [QSA,L]
+RewriteRule ^member/delete/?$ app/controller/memberController.php?action=delete [QSA,L]
+RewriteRule ^member/delete/confirm/?$ app/controller/memberController.php?action=confirm [QSA,L]
+RewriteRule ^member/delete/deleted/?$ app/controller/memberController.php?action=deleted [QSA,L]
+RewriteRule ^member/edit/?$ app/controller/memberController.php?action=edit [QSA,L]
+RewriteRule ^member/edit/(\d+)?$ app/controller/memberController.php?action=editMember&member_id=$1 [QSA,L]
+RewriteRule ^member/search/?$ app/controller/memberController.php?action=search [QSA,L]
+RewriteRule ^member/searching/?$ app/controller/memberController.php?action=searching [QSA,L]
+
+#edit
+
+RewriteRule ^member/edit/personal/?$ app/controller/memberController.php?action=personalEdit [QSA,L]
+RewriteRule ^member/edit/photo/?$ app/controller/memberController.php?action=photoEdit [QSA,L]
+RewriteRule ^member/edit/events/?$ app/controller/memberController.php?action=eventEdit [QSA,L]

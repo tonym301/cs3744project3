@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>
+      Stark Family List
+    </title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="scripts-jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <ul class="nav">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="FamilyList.html">My Family</a></li>
+      <li><a href="#SearchFamily">Search Family</a></li>
+      <li><a class="active" href="AddFamilyMember.html">Add Family Member</a></li>
+      <li><a href="#EditFamily">Edit Family Member</a></li>
+      <li class="logout"><a href="HomeNotSignedIn.html">Log out</a></li>
+    </ul>
+
+    <!-- Forms to update basic information on the indivdual -->
+    <div class="leftadd">
+      <h1 class="title_family">Add New Family Member</h1>
+      <div id=forms>
+        <button>Upload Photo</button>
+      </div>
+      <div id="basic">
+        <form >
+          First name:<br><input type="text" name="firstname"><br>
+          Last name:<br><input type="text" name="lastname" ><br><br>
+          <input type="radio" name="status" value="Alive" checked> Alive<br>
+          <input type="radio" name="status" value="Deceased"> Deceased<br><br>
+          <p>Birth Date: </p><input type="date" name="Birthdate"><br>
+          <p id="ifDead">Death Date:</p> <input type="date" name="Deathdate">
+        </form>
+        <form >
+          <br><u><b>Life Events</b></u><br>
+          Date: <input type="date" name="DateOfEvent"><br>
+          Name of event: <input type="text" name="NameOfEvent"><br>
+          Description: <textarea class="text"></textarea><br>
+        </form>
+      </div>
+    </div>
+
+    <!-- Forms to update relationship table -->
+    <div class="rightadd">
+      <div id="update">
+      <button id="addRelButton">Add Relationship</button>
+      <form id="addRelForm" style="display: none;">
+        <input type="text" id="eventName" placeholder="Name" class="text"><br>
+        <input type="number" id="eventAge" placeholder="Age" class="text"><br>
+        <input id="eventRelationship" placeholder="Relationship" class="text"><br>
+        <button id="submitRelButton" type="button">Add</button>
+      </form>
+      <!-- Relationship Table -->
+      <div class="family_table" style="overflow-y:auto;">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Relationship</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Eddard Stark</td>
+            <td>Father</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Arya Stark</td>
+            <td>Sister</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>Sansa Stark</td>
+            <td>Sister</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>Bran Stark</td>
+            <td>Brother</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>Rickon Stark</td>
+            <td>Brother</td>
+            <td>11</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+
+      <input id="done" type="submit" value="Add new family member">
+    </div>
+
+
+    <hr class="clear">
+      <!-- Footer Bar -->
+    <div id="footer">
+      <p  class="foot"><a href="#">Site Map</a> | <a href="#">Contact Us</a> | <a href="#">About Us</a> | <a href="#">FAQ</a> | <a href="#">Help</a></p>
+    </div>
+
+  </body>
+</html>

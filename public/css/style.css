@@ -1,0 +1,405 @@
+
+body {background-color: lightblue;}
+
+h1#home {
+    color: #000;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+h1.member_name {
+    color: #000;
+    margin-left: 5%;
+    width: 80%;
+    padding-right: 10%;
+    Float: Left;
+    font-size: 35px;
+    font-family: Georgia;
+}
+
+h2#family {
+  color: #000;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+h1#Welcome {
+  color: #000;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 40px;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+div#announcement {
+    width: 35vw;
+    height: 70vh;
+    overflow: auto;
+}
+
+.left {
+  width: 33%;
+  float: left;
+}
+
+.middle {
+    width: 34%;
+  float: left;
+}
+
+.right {
+  width: 28%;
+  float: left;
+  padding-top: 10%;
+  position: relative;
+  left: 40px;
+}
+
+.left img {
+  width: 60%;
+  max-width: 60%;
+  margin-bottom: 5%;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.lefthome {
+  width: 33%;
+  float: left;
+}
+
+.lefthome img {
+  width: 60%;
+  max-width: 60%;
+  margin-bottom: 5%;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.middlehome{
+  width: 34%;
+  float: left;
+}
+
+.righthome {
+  width: 33%;
+  float: left;
+}
+
+.leftmember {
+  width: 50%;
+  float: left;
+}
+
+.rightmember {
+  width: 50%;
+  height: 70vh;
+  float: right;
+}
+
+.leftadd {
+  width: 50%;
+  float: left;
+}
+
+.rightadd {
+  width: 50%;
+  float: right;
+}
+
+button#logout {
+    float: right;
+    margin-right: 30%;
+    margin-top: 12%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.clear {clear: both;}
+
+p.foot {text-align: center;}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.nav li {float: left;}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover:not(.active) {
+    background-color: #e4a221;
+    color: black;
+}
+
+ul.nav li a.active {background-color: #4CAF50;}
+
+ul.nav li.logout {float: right;}
+
+
+/* Family Memember page */
+.member_photo {float: left;}
+
+.member_photo img {
+  width: 100%;
+  max-width: 100%;
+  height:auto;
+  display: block;
+}
+
+.personal_info {
+  margin-bottom: 10%;
+  float: left;
+  top: 6%;
+  padding-left: 5%;
+}
+
+div#life_events {float: left;}
+
+div#data {
+  margin-top: 2%;
+  width: 40vw;
+  margin-right: 20%;
+  height: 30vh;
+  overflow-y:auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+p.wrap {
+    word-wrap: break-word;
+}
+
+h1.title_family {padding-left: 10px;}
+
+.family_table#listview {
+  height: 50vh;
+  width: 98vw;
+}
+
+.family_table table#data tr#myTableRow{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.family_table {
+  float: left;
+  width: 48vw;
+  height: 28vh;
+  overflow-y:auto;
+}
+
+table.table {
+  table-layout: fixed;
+}
+.family_list {
+
+  float: none;
+  width: 80vw;
+  height: 50vh;
+  overflow-y:auto;
+}
+
+div.family_list td a  {
+  text-decoration:none;
+  color: white;
+}
+
+.table tr, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table {
+  margin-top: 1%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+div.delete {
+  float: left;
+  width: 50%;
+}
+div.delete table {
+  float: left;
+  width: 100%;
+  height: 28vh;
+  overflow-y:auto;
+}
+
+#getID {
+  display: none;
+}
+
+div#popup {
+  float: right;
+  width: 48vw;
+  height: 28vh;
+  display: none;
+}
+
+table#relationships th {
+  padding: 8px;
+  width: 50%;
+}
+
+tr:nth-child(even){background-color: #1943d7}
+
+tr:nth-child(odd){background-color: #2872bf}
+
+div.family_table td a  {
+  text-decoration:none;
+  color: white;
+}
+
+/* Add New Family Member */
+div#basic {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+form.addfam fieldset {
+  background-color:#7faff0;
+  margin-right: 10%;
+}
+
+div.deleteQ {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+form.delfam fieldset{
+  background-color:#7faff0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Login page */
+div.login {
+  margin-left: 10%;
+}
+h1#login {
+  margin-left: 10%;
+}
+
+/* Confirm page */
+
+.yesno {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.yesno2 {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+/* Home page */
+  .lefthome, .middlehome, .righthome, div#footer{
+    float: none;
+    width: 100%;
+  }
+
+  div#announcement {
+    width: 100%;
+    height: 70vh;
+    overflow: auto;
+  }
+  /* Member page */
+  .leftmember, .rightmember, div#footer {
+    float: none;
+    width: 100%;
+  }
+
+  .leftadd, .rightadd, div#footer {
+    float: none;
+    width: 100%;
+  }
+
+  .left, .middle, .right {
+    float: none;
+    width: 100%;
+  }
+
+  .right {
+    position: relative;
+    left: 10px;
+  }
+  div#life_events {
+    width: 100%;
+  }
+
+  div#data {
+    width: 94%;
+    margin: 3%;
+    height: 70vh;
+    overflow: auto;
+  }
+
+  .family_table {
+    float: none;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .button {
+    margin-left: 0;
+    width: 100%;
+  }
+  .button1 {
+    margin-top: 5%;
+  }
+
+  button#logout {
+    float: none;
+    width: 100%;
+  }
+
+  ul.nav li.logout, ul.nav li {
+      float: none;
+  }
+
+}

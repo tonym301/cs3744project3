@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+  <meta charset="UTF-8">
+    <title>
+      Robb Stark
+    </title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <ul class="nav">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="FamilyList.html">My Family</a></li>
+      <li><a href="#SearchFamily">Search Family</a></li>
+      <li><a href="AddFamilyMember.html">Add Family Member</a></li>
+      <li><a href="#EditFamily">Edit Family Member</a></li>
+      <li class="logout"><a href="HomeNotSignedIn.html">Log out</a></li>
+    </ul>
+
+    <!-- Informtaion about the family member -->
+    <div class="leftmember">
+        <h1 class="member_name">Robb Stark</h1>
+        <div class="member_photo">
+          <img src="img/Robb.jpg" alt="Robb Stark" width="354" height="513">
+        </div>
+
+          <!-- Personal information of family member -->
+        <div class="personal_info">
+          <h2><u>Personal Infromation:</u></h2>
+          <p><b>Date of Birth:</b> 281 AC <br/>
+          <B>Date of Death: </b> 300 AD<br/>
+          <b>Titles:</b> <br/>King in the North<br/>Lord of Winterfell<br/>Lord Paramount of the North<br/></p>
+        </div>
+        <!-- Table of family members -->
+        <div class="family_table" style="overflow-y:auto;">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Relationship</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td><a href="#EditFamily">Eddard Stark</a></td>
+              <td>Father</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td><a href="#EditFamily">Arya Stark</a></td>
+              <td>Sister</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td><a href="#EditFamily">Sansa Stark</a></td>
+              <td>Sister</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td><a href="#EditFamily">Bran Stark</a></td>
+              <td>Brother</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td><a href="#EditFamily">Rickon Stark</a></td>
+              <td>Brother</td>
+              <td>11</td>
+            </tr>
+          </table>
+        </div>
+
+    </div>
+
+    <!-- Life event info division -->
+    <div class="rightmember">
+      <div id="life_events">
+        <h2 id="life">Life Events</h2>
+        <button>Add life event</button>
+        <div id="data">
+        <p><b>Birth 281 AD: </b><br/>Robb was born in the castle of Winterfell. He was the first son of Eddard Satrk and the rightful heir to the northern throne. His birth was in the middle of the summer years.<br/><br/>
+        <b>First Battle - Battle of the Twin Rivers: </b><br/>Robb's first battle was also his first victory. He wore his own plated armor and commanded the bannermen that pledged to house Stark. He fought bravely and had a comfirmed kill count of 5.<br/><br/>
+        <b>Second Battle Battle - Defence of Winterfell: </b><br/>Robb was forced to fight savages that teamed up against his home castle. This was an especially important event to Robb because he had the chance to prove his stength to his family and earn the honor of the Stark name. The defence was successful and Robb ws awarded a new set of armor.<br/><br/>
+        </p>
+      </div>
+      </div>
+    </div>
+
+    <hr class="clear">
+
+    <!-- Footer Bar -->
+    <div id="footer">
+      <p  class="foot"><a href="#">Site Map</a> | <a href="#">Contact Us</a> | <a href="#">About Us</a> | <a href="#">FAQ</a> | <a href="#">Help</a></p>
+    </div>
+
+  </body>
+</html>
+
+<!-- Image Sources
+http://gameofthrones.wikia.com/wiki/Robb_Stark
+-->
